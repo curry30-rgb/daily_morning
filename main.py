@@ -45,7 +45,7 @@ wea, temperature = get_weather()
 data = {"weather":{"value":wea},
         "temperature":{"value":temperature},
         "birthday_left":{"value":get_birthday()},
-        "newyear_left":{"value":get_newyear()}
+        "newyear_left":{"value":get_newyear()},
        }
 res = wm.send_template(user_id, template_id, data)
 print(res)
